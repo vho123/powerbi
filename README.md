@@ -12,6 +12,3 @@ https://docs.microsoft.com/en-us/power-bi/desktop-tutorial-analyzing-sales-data-
 
 # Row-level security (RLS)
 https://docs.microsoft.com/en-us/power-bi/admin/service-admin-rls
-
-# File 
-https://tecturahongkonglimited-my.sharepoint.com/:x:/g/personal/hho9152_tectura_com/ETa8CBuSN4FCpEM_OJLj764BHEOImfIPPx8zKkpLt8rF2g?e=uoZOA8
