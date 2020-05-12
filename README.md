@@ -1,2 +1,2 @@
-# powerbi
+# Power
 Power BI
