@@ -1,6 +1,12 @@
 # PowerBI
 Power BI Training Material
 
+# Product Details - Raw Data
+https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx
+
+# Order Details
+https://services.odata.org/V3/Northwind/Northwind.svc/
+
 # Tutorial: Analyze sales data from Excel and an OData feed
 https://docs.microsoft.com/en-us/power-bi/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed
 
