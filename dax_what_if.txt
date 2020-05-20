@@ -1,0 +1,14 @@
+4 what-if parameter
+Segment (Productivity) Markup
+Base Discount rate
+Invoice Amount
+Extra discount rate
+
+Markup Revenue = 
+sumx(SUMMARIZE('CA Sales', 'CA Sales'[Index],
+"amount", if(LASTNONBLANK('CA Sales'[Segment], 'CA Sales'[Segment])="Productivity", sum('CA Sales'[Revenue])+'Segment (Productivity) Markup'[Segment (Productivity) Markup Value], sum('CA Sales'[Revenue]))), [amount])
+
+Discounted Revenue = [Markup Revenue] * (1 - 'Base Discount rate'[Base Discount rate Value]/100)
+
+ExtraDiscountedRevenue = sumx( SUMMARIZE('CA Sales', 'CA Sales'[index],
+"Amount", [Discounted Revenue]), if([Amount]>='Invoice Amount'[Invoice Amount Value],[Discounted Revenue]* (1- 'Extra discount rate'[Extra discount rate Value]/100), [Discounted Revenue]))
