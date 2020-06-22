@@ -12,3 +12,6 @@ https://docs.microsoft.com/en-us/power-bi/desktop-tutorial-analyzing-sales-data-
 
 # Row-level security (RLS)
 https://docs.microsoft.com/en-us/power-bi/admin/service-admin-rls
+
+# Admin Portal
+https://docs.microsoft.com/en-us/power-bi/admin/service-admin-portal
