@@ -4,9 +4,12 @@ Base Discount rate
 Invoice Amount
 Extra discount rate
 
+
+Revenue(HKD) = sum('CA Sales'[Revenue])*'Exchange rate'[Exchange rate Value]
+
 Markup Revenue = 
 sumx(SUMMARIZE('CA Sales', 'CA Sales'[Index],
-"amount", if(LASTNONBLANK('CA Sales'[Segment], 'CA Sales'[Segment])="Productivity", sum('CA Sales'[Revenue])+'Segment (Productivity) Markup'[Segment (Productivity) Markup Value], sum('CA Sales'[Revenue]))), [amount])
+"amount", if(LASTNONBLANK('CA Sales'[Segment], 'CA Sales'[Segment])="Productivity", [Revenue(HKD)]+'Segment (Productivity) Markup'[Segment (Productivity) Markup Value], [Revenue(HKD)])), [amount])
 
 Discounted Revenue = [Markup Revenue] * (1 - 'Base Discount rate'[Base Discount rate Value]/100)
 
