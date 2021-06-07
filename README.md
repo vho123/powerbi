@@ -18,3 +18,6 @@ https://docs.microsoft.com/en-us/power-bi/admin/service-admin-portal
 
 # New Workspace Management
 https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces
+
+# Power App integration in Power BI
+https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/powerapps-custom-visual
